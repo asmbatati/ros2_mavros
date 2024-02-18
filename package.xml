@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>px4_offboard_control</name>
+  <name>ros2_mavros</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS 2 simulation packge of x500 UAV Control</description>
   <maintainer email="asmalbatati@hotmail.com">user</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>px4_msgs</depend>

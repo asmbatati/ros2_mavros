@@ -81,7 +81,7 @@ def generate_launch_description():
 
     
     random_trajectories_node = Node(
-        package='px4_offboard_control',
+        package='ros2_mavros',
         executable='execute_random_trajectories',
         output='screen',
         name='execute_random_trajectories',

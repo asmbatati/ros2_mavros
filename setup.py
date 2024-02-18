@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'px4_offboard_control'
+package_name = 'ros2_mavros'
 
 setup(
     name=package_name,
@@ -22,7 +22,7 @@ setup(
     zip_safe=True,
     maintainer='asmbatati',
     maintainer_email='asmalbatati@hotmail.com',
-    description='ROS 2 simulation packge of x500 UAV',
+    description='ROS 2 simulation packge of x500 UAV Control',
     license='MIT',
     tests_require=['pytest'],
     entry_points={

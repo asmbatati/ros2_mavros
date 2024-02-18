@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='px4_offboard_control',
+            package='ros2_mavros',
             executable='gt_x500_tf',
             name='gt_x500_tf_node',
             output='screen',
