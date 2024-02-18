@@ -1,9 +1,11 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
+
 from std_msgs.msg import Header
 from geometry_msgs.msg import PoseStamped, Point, Quaternion
 from mavros_msgs.srv import CommandBool, SetMode
+
 import numpy as np
 import math
 import time
@@ -11,6 +13,10 @@ import time
 class UAVOffboardControl(Node):
     def __init__(self):
         super().__init__('uav_offboard_control')
+
+        # self.arming_client = self.create_client(CommandBool, '/x500/mavros/cmd/arming')
+        # self.set_mode_client = self.create_client(SetMode, '/x500/mavros/set_mode')
+        # self.takeoff_pub = self.create_publisher(PoseStamped, '/x500/mavros/setpoint_position/local', QoSProfile(depth=10))
 
         self.arming_client = self.create_client(CommandBool, '/target/mavros/cmd/arming')
         self.set_mode_client = self.create_client(SetMode, '/target/mavros/set_mode')

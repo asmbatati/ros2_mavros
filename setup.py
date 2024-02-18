@@ -31,6 +31,7 @@ setup(
             'arm = px4_offboard_control.arm:main',
             'takeoff = px4_offboard_control.takeoff:main',
             'arm_takeoff = px4_offboard_control.arm_takeoff:main',
+            'offboard_traj = px4_offboard_control.offboard_traj:main',
             'circle = px4_offboard_control.circular_traj:main'
         ],
     },

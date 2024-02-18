@@ -7,7 +7,7 @@ class UAVControlNode(Node):
         super().__init__('uav_control_node')
 
         # Define the service clients
-        self.arming_client = self.create_client(CommandBool, '/mavros/cmd/arming')
+        self.arming_client = self.create_client(CommandBool, '/x500/mavros/cmd/arming')
 
         # Ensure that the service clients are available before proceeding
         while not self.arming_client.wait_for_service(timeout_sec=1.0):
